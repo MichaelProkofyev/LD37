@@ -118,7 +118,7 @@ public class TVController : MonoBehaviour {
         TVObject vacuumCleaner = new TVObject();
         vacuumCleaner.physicalObject = vacuumCleanerPrefab;
         vacuumCleaner.fullName = "Vacuum Cleaner";
-        vacuumCleaner.nickname = "likeroomba";
+        vacuumCleaner.nickname = "roomba";
         vacuumCleaner.basePrice = 60;
         vacuumCleaner.happinessAmount = 20;
         objects.Add(vacuumCleaner);
@@ -126,7 +126,7 @@ public class TVController : MonoBehaviour {
         TVObject radio = new TVObject();
         radio.physicalObject = radioPrefab;
         radio.fullName = "Radio";
-        radio.nickname = "notatv";
+        radio.nickname = "retro";
         radio.basePrice = 45;
         radio.happinessAmount = 15;
         objects.Add(radio);

@@ -38,7 +38,7 @@ public class Player : MonoBehaviour {
 	        if(Input.GetKeyDown(KeyCode.Space))
 	        {
 	            //tv.BuySelected();
-				people.StartCoroutine(people.GoToExit());
+				//people.StartCoroutine(people.GoToExit());
 	        }
 
 		    if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
