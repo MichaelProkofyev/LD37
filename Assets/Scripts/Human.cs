@@ -11,8 +11,8 @@ public enum HumanState
 }
 public class Human : MonoBehaviour {
 
-    static string[] entryPhrases = new string[7] { "Better than my crib!", "WTF, rain?", "That's so 80s!", "Cool shit!", "Dope", "Dope", "Dope", };
-    static string[] exitPhrases = new string[7] { "Never liked you anyway!", "BORED!", "SEEN THAT!", "Run to exit!", "Run to exit!", "Run to exit!", "Run to exit!", };
+    static string[] entryPhrases = new string[7] { "BETTER THAN MY CRIB!", "WTF, RAIN?", "THAT'S SO 80S!", "COOL SHIT!", "NEW THINGS!", "DOPE.", "DOPE.", };
+    static string[] exitPhrases = new string[7] { "NOTHING NEW HERE!", "BORED!", "I'VE SEEN THAT!", "BUY SOMETHING ALREADY!", "NOT CHARMED ANYMORE!", "BORED!", "BORED!", };
 
 
 

@@ -118,7 +118,7 @@ public class TVController : MonoBehaviour {
         TVObject vacuumCleaner = new TVObject();
         vacuumCleaner.physicalObject = vacuumCleanerPrefab;
         vacuumCleaner.fullName = "Vacuum Cleaner";
-        vacuumCleaner.nickname = "cleanaf";
+        vacuumCleaner.nickname = "likeroomba";
         vacuumCleaner.basePrice = 60;
         vacuumCleaner.happinessAmount = 20;
         objects.Add(vacuumCleaner);
@@ -126,7 +126,7 @@ public class TVController : MonoBehaviour {
         TVObject radio = new TVObject();
         radio.physicalObject = radioPrefab;
         radio.fullName = "Radio";
-        radio.nickname = "bzzz";
+        radio.nickname = "notatv";
         radio.basePrice = 45;
         radio.happinessAmount = 15;
         objects.Add(radio);
@@ -134,7 +134,7 @@ public class TVController : MonoBehaviour {
         TVObject juiceMaker = new TVObject();
         juiceMaker.physicalObject = juiceMakerPrefab;
         juiceMaker.fullName = "JuiceMaker";
-        juiceMaker.nickname = "yum";
+        juiceMaker.nickname = "health";
         juiceMaker.basePrice = 60;
         juiceMaker.happinessAmount = 20;
         objects.Add(juiceMaker);
@@ -150,7 +150,7 @@ public class TVController : MonoBehaviour {
         TVObject toaster = new TVObject();
         toaster.physicalObject = toasterPrefab;
         toaster.fullName = "Toaster";
-        toaster.nickname = "crisp";
+        toaster.nickname = "coals";
         toaster.basePrice = 45;
         toaster.happinessAmount = 15;
         objects.Add(toaster);
@@ -158,7 +158,7 @@ public class TVController : MonoBehaviour {
         TVObject pan = new TVObject();
         pan.physicalObject = panPrefab;
         pan.fullName = "Pan";
-        pan.nickname = "bubbles";
+        pan.nickname = "bubbly";
         pan.basePrice = 30;
         pan.happinessAmount = 10;
         objects.Add(pan);
@@ -167,7 +167,7 @@ public class TVController : MonoBehaviour {
         TVObject jewelry = new TVObject();
         jewelry.physicalObject = jewelryPrefab;
         jewelry.fullName = "Jewelry";
-        jewelry.nickname = "iamrich";
+        jewelry.nickname = "rich";
         jewelry.basePrice = 105;
         jewelry.happinessAmount = 35;
         objects.Add(jewelry);

@@ -1,15 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PeopleController : MonoBehaviour {
 
     public GameController gameController;
     public Animator boredTextAnim;
 
+	//TO STOP
+	public Player playerController;
+
     public UIController uiController;
     public GameObject unclePrefab, grannyPrefab, rebelPrefab, twinsPrefab, chocolatePrefab, dogPrefab, womanPrefab;
     List<Human> people = new List<Human>();
+	public Animator gameOverAnimator;
 
     Vector3 firstEnterPoint, secondEnterPoint;
     float cashAddRate = 2f;
@@ -41,7 +46,7 @@ public class PeopleController : MonoBehaviour {
                     people.Add(newHuman.GetComponent<Human>());
                 }else if (i == 4)
                 {
-                    newHuman = Instantiate(chocolatePrefab, spawnPosition, Quaternion.identity);
+					newHuman = Instantiate(womanPrefab, spawnPosition, Quaternion.identity);
                     people.Add(newHuman.GetComponent<Human>());
                 }else if (i == 5)
                 {
@@ -49,12 +54,22 @@ public class PeopleController : MonoBehaviour {
                     people.Add(newHuman.GetComponent<Human>());
                 }else if (i == 6)
                 {
-                    newHuman = Instantiate(womanPrefab, spawnPosition, Quaternion.identity);
+					newHuman = Instantiate(chocolatePrefab, spawnPosition, Quaternion.identity);
                     people.Add(newHuman.GetComponent<Human>());
+					StartCoroutine(GoToExit());
                 }
             }
         }
     }
+
+	public IEnumerator GoToExit()
+	{	
+		playerController.stopped = true;
+		yield return new WaitForSeconds(1.5f);
+		gameOverAnimator.Play("GameOver");
+		yield return new WaitForSeconds(3f);
+		SceneManager.LoadScene ("gameover");
+	}
 
     public void HappinessDecreased(float oldHappiness, float newHappiness)
     {
@@ -83,7 +98,7 @@ public class PeopleController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(people.Count > 0)
+		if(people.Count > 0 && 7 != people.Count)
         {
             lastcashAdd += Time.deltaTime;
 
