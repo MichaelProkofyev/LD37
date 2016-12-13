@@ -67,7 +67,10 @@ public class PeopleController : MonoBehaviour {
 		playerController.stopped = true;
 		yield return new WaitForSeconds(1.5f);
 		gameOverAnimator.Play("GameOver");
+
 		yield return new WaitForSeconds(3f);
+		GetComponent<AudioSource>().Play();
+		yield return new WaitForSeconds(1.736f);
 		SceneManager.LoadScene ("gameover");
 	}
 
